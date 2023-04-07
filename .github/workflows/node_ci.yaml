@@ -22,3 +22,8 @@ jobs:
       run: |
         cd capstone_project/hello-world 
         npm test
+    - name: Build container
+      run: |
+        cd capstone_project/hello-world
+        docker compose up
+      if: success()
