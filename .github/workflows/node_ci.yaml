@@ -19,4 +19,6 @@ jobs:
         cd capstone_project/hello-world
         npm install
     - name: Run tests
-      run: npm test
+      run: |
+        cd capstone_project/hello-world 
+        npm test
