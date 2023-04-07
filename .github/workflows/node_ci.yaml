@@ -17,6 +17,6 @@ jobs:
     - name: Install dependencies
       run: |
         cd capstone_project/hello-world
-        npm ci
+        npm install
     - name: Run tests
       run: npm test
