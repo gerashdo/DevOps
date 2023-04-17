@@ -1,0 +1,11 @@
+- name: Change file content
+  hosts: web-1
+  become: yes
+  tasks:
+    - name: Change hello world
+      vars:
+        new_content: 'Hello DevOps!'
+      replace:
+        path: /app/src/App.js
+        regexp: 'Hello World!'
+        replace: '{{ new_content }}'
